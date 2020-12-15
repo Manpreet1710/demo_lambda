@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/testURl.html" method="GET">
+        <input type="text" name="value">
+        <input type="text" name="value2">
+        <input type="submit">
+    </form>
+
+    <script>
+        const params = new URLSearchParams(window.location.search)
+        let res = params.get('value')
+        let res2 = params.get('value2')
+        console.log(res)
+        console.log(res2)
+    </script>
+</body>
+
+</html>
