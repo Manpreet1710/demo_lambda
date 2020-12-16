@@ -1,10 +1,10 @@
 {
-  "name": "testWordApi",
+  "name": "test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prod": "npm run build; npm run build:lambda",
+    "prod": "npm run lambda-serve",
     "lambda-serve": "netlify-lambda serve functions",
     "lambda-build": "netlify-lambda build functions"
   },
