@@ -6,7 +6,7 @@ console.log(form)
 
 const data = async (input) => {
   try {
-    const newdata = await fetch(`http://127.0.0.1:9000/getWords?name=${input}`)
+    const newdata = await fetch(`/.netlify/getWords?name=${input}`)
     const res = await newdata.json()
     Array.from(res).map((val) => {
       if (!val.includes(input)) {
